@@ -47,8 +47,23 @@ logo.setAttribute('src', 'img/logo.png');
 
 // Nav
 
-// let NavBar = document.querySelectorAll('nav-item');
-// NavBar;
+let NavBar = document.querySelectorAll('nav a');
+NavBar[0].textContent = siteContent.nav["nav-item-1"];
+NavBar[1].textContent = siteContent.nav["nav-item-2"];
+NavBar[2].textContent = siteContent.nav["nav-item-3"];
+NavBar[3].textContent = siteContent.nav["nav-item-4"];
+NavBar[4].textContent = siteContent.nav["nav-item-5"];
+NavBar[5].textContent = siteContent.nav["nav-item-6"];
+
+//CTA
+
+let CTA = document.querySelector('.cta-text h1');
+CTA.textContent = siteContent.cta.h1;
+
+let ctaButton = document.querySelector('.cta-text button');
+ctaButton.textContent = siteContent.cta.button;
+
+
 
 let ctaImg = document.getElementById('cta-img');
 ctaImg.setAttribute('src', 'img/header-img.png' );
