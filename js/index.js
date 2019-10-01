@@ -47,7 +47,7 @@ logo.setAttribute('src', 'img/logo.png');
 
 // Nav
 
-let NavBar = document.querySelectorAll('nav a');
+const NavBar = document.querySelectorAll('nav a');
 NavBar[0].textContent = siteContent.nav["nav-item-1"];
 NavBar[1].textContent = siteContent.nav["nav-item-2"];
 NavBar[2].textContent = siteContent.nav["nav-item-3"];
@@ -55,18 +55,43 @@ NavBar[3].textContent = siteContent.nav["nav-item-4"];
 NavBar[4].textContent = siteContent.nav["nav-item-5"];
 NavBar[5].textContent = siteContent.nav["nav-item-6"];
 
-//CTA
+// CTA
 
-let CTA = document.querySelector('.cta-text h1');
+const CTA = document.querySelector('.cta-text h1');
 CTA.textContent = siteContent.cta.h1;
 
-let ctaButton = document.querySelector('.cta-text button');
+const ctaButton = document.querySelector('.cta-text button');
 ctaButton.textContent = siteContent.cta.button;
 
 
+// Content Headers
 
-let ctaImg = document.getElementById('cta-img');
+const ContentH = document.querySelectorAll('.main-content h4');
+ContentH[0].textContent = "Features";
+ContentH[1].textContent = "About";
+ContentH[2].textContent = "Services";
+ContentH[3].textContent = "Product";
+ContentH[4].textContent = "Vision";
+
+
+// Content Paragraphs
+
+const ContentP = document.querySelectorAll('.main-content p');
+ContentP[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+ContentP[1].textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+ContentP[2].textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+ContentP[3].textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+ContentP[4].textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+// Images
+
+const ctaImg = document.getElementById('cta-img');
 ctaImg.setAttribute('src', 'img/header-img.png' );
 
-let midImg = document.getElementById('middle-img');
+const midImg = document.getElementById('middle-img');
 midImg.setAttribute('src', 'img/mid-page-accent.jpg');
+
+// Contact and Footer
+
+// const ContactH = document.querySelector('.contact h4');
+// ContactH.textContent = "Contact";
