@@ -93,5 +93,13 @@ midImg.setAttribute('src', 'img/mid-page-accent.jpg');
 
 // Contact and Footer
 
-// const ContactH = document.querySelector('.contact h4');
-// ContactH.textContent = "Contact";
+const ContactH = document.querySelector('.contact h4');
+ContactH.textContent = "Contact";
+
+const ContactP = document.querySelectorAll('.contact p');
+ContactP[0].textContent = "123 Way 456 Street Somewhere, USA";
+ContactP[1].textContent = "1 (888) 888-8888";
+ContactP[2].textContent = "sales@greatidea.io";
+
+const Footer = document.querySelector('footer p');
+Footer.textContent = "Copyright Great Idea! 2018";
