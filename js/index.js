@@ -38,5 +38,86 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+let logo = document.getElementById('logo-img');
+// logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', 'img/logo.png');
+
+
+// Create Selectors
+
+// Nav
+
+const NavBar = document.querySelectorAll('nav a');
+NavBar[0].textContent = siteContent.nav["nav-item-1"];
+NavBar[1].textContent = siteContent.nav["nav-item-2"];
+NavBar[2].textContent = siteContent.nav["nav-item-3"];
+NavBar[3].textContent = siteContent.nav["nav-item-4"];
+NavBar[4].textContent = siteContent.nav["nav-item-5"];
+NavBar[5].textContent = siteContent.nav["nav-item-6"];
+
+const newNavTag = document.createElement("a");
+const newNavTag2= document.createElement("a");
+
+const parElement = document.querySelector("nav");
+const parElement2 = document.querySelector("nav");
+parElement.prepend(newNavTag);
+parElement2.appendChild(newNavTag2);
+
+// Nav Text Color
+
+NavBar[0].style.color = "green";
+NavBar[1].style.color = "green";
+NavBar[2].style.color = "green";
+NavBar[3].style.color = "green";
+NavBar[4].style.color = "green";
+NavBar[5].style.color = "green";
+
+
+// CTA
+
+const CTA = document.querySelector('.cta-text h1');
+CTA.textContent = siteContent.cta.h1;
+
+const ctaButton = document.querySelector('.cta-text button');
+ctaButton.textContent = siteContent.cta.button;
+
+
+// Content Headers
+
+const ContentH = document.querySelectorAll('.main-content h4');
+ContentH[0].textContent = "Features";
+ContentH[1].textContent = "About";
+ContentH[2].textContent = "Services";
+ContentH[3].textContent = "Product";
+ContentH[4].textContent = "Vision";
+
+
+// Content Paragraphs
+
+const ContentP = document.querySelectorAll('.main-content p');
+ContentP[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+ContentP[1].textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+ContentP[2].textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+ContentP[3].textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+ContentP[4].textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+// Images
+
+const ctaImg = document.getElementById('cta-img');
+ctaImg.setAttribute('src', 'img/header-img.png' );
+
+const midImg = document.getElementById('middle-img');
+midImg.setAttribute('src', 'img/mid-page-accent.jpg');
+
+// Contact and Footer
+
+const ContactH = document.querySelector('.contact h4');
+ContactH.textContent = "Contact";
+
+const ContactP = document.querySelectorAll('.contact p');
+ContactP[0].textContent = "123 Way 456 Street Somewhere, USA";
+ContactP[1].textContent = "1 (888) 888-8888";
+ContactP[2].textContent = "sales@greatidea.io";
+
+const Footer = document.querySelector('footer p');
+Footer.textContent = "Copyright Great Idea! 2018";
