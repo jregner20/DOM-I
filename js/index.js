@@ -55,6 +55,14 @@ NavBar[3].textContent = siteContent.nav["nav-item-4"];
 NavBar[4].textContent = siteContent.nav["nav-item-5"];
 NavBar[5].textContent = siteContent.nav["nav-item-6"];
 
+const newNavTag = document.createElement("a");
+const newNavTag2= document.createElement("a");
+
+const parElement = document.querySelector("nav");
+const parElement2 = document.querySelector("nav");
+parElement.prepend(newNavTag);
+parElement2.appendChild(newNavTag2);
+
 // Nav Text Color
 
 NavBar[0].style.color = "green";
