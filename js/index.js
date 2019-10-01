@@ -55,6 +55,16 @@ NavBar[3].textContent = siteContent.nav["nav-item-4"];
 NavBar[4].textContent = siteContent.nav["nav-item-5"];
 NavBar[5].textContent = siteContent.nav["nav-item-6"];
 
+// Nav Text Color
+
+NavBar[0].style.color = "green";
+NavBar[1].style.color = "green";
+NavBar[2].style.color = "green";
+NavBar[3].style.color = "green";
+NavBar[4].style.color = "green";
+NavBar[5].style.color = "green";
+
+
 // CTA
 
 const CTA = document.querySelector('.cta-text h1');
